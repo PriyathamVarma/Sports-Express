@@ -58,19 +58,12 @@ app.post('/products/create',async(req,res)=>{
 
     const _body = req.body;
 
-    // const _Name        = _body.Name;
-    // const _Subname     = _body.Subname;
-    // const _category    = _body.Category;
-    // const _link        = _body.link;
-    // const _price       = _body.price;
-    // const _description = _body.description;
-
-    const _Name        = "Blue shirt";
-    const _Subname     = "By HRX 2";
-    const _category    = "T-shirt";
-    const _link        = "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a229b012-c62d-4f89-9ed2-3fca4bbe274a/air-jordan-1-retro-high-og-shoes.png";
-    const _price       = "500";
-    const _description = "the best in the town";
+    const _Name        = _body.Name;
+    const _Subname     = _body.Subname;
+    const _category    = _body.Category;
+    const _link        = _body.link;
+    const _price       = _body.price;
+    const _description = _body.description;
 
 
     const newdata = new productModal({
